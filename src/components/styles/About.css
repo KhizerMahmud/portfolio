@@ -1,0 +1,235 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  place-items: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  width: var(--cWidth);
+  margin: auto;
+}
+.about-me {
+  padding: 50px 0px;
+  padding-bottom: 0;
+  width: 500px;
+  max-width: calc(100% - 15px);
+}
+.about-me h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 400;
+  color: var(--accentColor);
+}
+
+.about-me p {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+.about-me .para-lead {
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 0;
+}
+
+.about-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.about-highlights li {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+  padding-left: 1.15rem;
+  position: relative;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.about-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accentColor);
+}
+
+.about-highlights li strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-credentials {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem 2rem;
+  align-items: start;
+}
+
+@media only screen and (min-width: 640px) {
+  .about-credentials {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2.25rem;
+  }
+
+  .about-credentials-block:last-child {
+    padding-left: 1.75rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+
+.about-credentials-block {
+  margin: 0;
+  min-width: 0;
+}
+
+.about-credentials-heading {
+  margin: 0 0 0.65rem;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accentColor);
+}
+
+.about-credentials-dl {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.about-credentials-row {
+  margin: 0;
+}
+
+.about-credentials-row dt {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+.about-credentials-row dd {
+  margin: 0.2rem 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.about-credentials-certs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.about-credentials-certs li {
+  margin: 0;
+  padding-left: 1rem;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.about-credentials-certs li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accentColor);
+  opacity: 0.85;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-section {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-me {
+    width: 500px;
+    max-width: calc(100% - 70px);
+    transform: translateY(0%);
+  }
+  .about-section {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .about-section {
+    width: var(--cWidth);
+    justify-content: right;
+    max-width: 1920px;
+    height: var(--vh);
+    padding: 0px;
+    opacity: 1;
+  }
+  .about-me {
+    padding: 0px;
+    width: 50%;
+  }
+  .about-me p {
+    font-size: 1.9vw;
+    line-height: 2.3vw;
+  }
+
+  .about-highlights li {
+    font-size: clamp(16px, 1.25vw, 22px);
+  }
+
+  .about-credentials-row dt {
+    font-size: clamp(15px, 1.15vw, 18px);
+  }
+
+  .about-credentials-row dd,
+  .about-credentials-certs li {
+    font-size: clamp(14px, 1.05vw, 16px);
+  }
+}
+@media only screen and (min-width: 1950px) {
+  .about-me p {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+
+  .about-highlights li {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .about-credentials-row dt {
+    font-size: 1.125rem;
+  }
+
+  .about-credentials-row dd,
+  .about-credentials-certs li {
+    font-size: 1.05rem;
+  }
+}
