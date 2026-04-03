@@ -9,3 +9,8 @@ export const LINKEDIN_URL =
 /** ApplyFirst product site (Contact + rocket icon) */
 export const APPLYFIRST_URL =
   "https://applyfirst-4fsixjbuy-khizer-mahmuds-projects.vercel.app/";
+
+/** GitHub profile and repositories tab */
+export const GITHUB_PROFILE_URL = "https://github.com/KhizerMahmud";
+export const GITHUB_REPOS_URL =
+  "https://github.com/KhizerMahmud?tab=repositories";

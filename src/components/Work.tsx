@@ -2,7 +2,6 @@ import { useState, useCallback } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
-import { APPLYFIRST_URL } from "../constants";
 
 type WorkProject = {
   title: string;
@@ -36,15 +35,6 @@ const projects: WorkProject[] = [
     tools:
       "React and TypeScript interfaces for agents resolving card fraud when customers call in; AWS Console and AWS-backed services for investigations, logs, and telemetry",
     image: "/images/work-capital-one-fraud.png?v=c1-theme",
-    imageVariant: "screenshot",
-  },
-  {
-    title: "ApplyFirst",
-    category: "SaaS · AI job search",
-    tools:
-      "SaaS platform for job seekers: AI cold emails, hiring contact lookup, pay as you go credits; React, TypeScript, Vercel",
-    image: "/images/applyfirst-hero.png",
-    link: APPLYFIRST_URL,
     imageVariant: "screenshot",
   },
 ];
